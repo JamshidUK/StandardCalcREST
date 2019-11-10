@@ -32,6 +32,19 @@ public class ScientificCalculatorController {
 		return square;
     }
 	
+	@RequestMapping("/scientific/root")
+    public double root(@RequestParam(value="a") String a) {
+		double root = 0;
+		try{
+			double input = Double.parseDouble(a);
+			root = Math.sqrt(input);
+		} catch (Exception e) {
+			throw new ResponseStatusException(HttpStatus.NOT_ACCEPTABLE, "Invalid Input", e);
+		}
+		
+		return root;
+    }
+	
 	@RequestMapping("/scientific/factorial")
     public long factorial(@RequestParam(value="a") String a) {
 		long factorial = 1;
