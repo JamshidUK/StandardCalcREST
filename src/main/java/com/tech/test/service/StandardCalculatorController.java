@@ -17,7 +17,7 @@ import org.springframework.web.server.ResponseStatusException;
 @RestController
 public class StandardCalculatorController {
 	
-	@RequestMapping("/add")
+	@RequestMapping("/standard/add")
     public double add(@RequestParam(value="a") String a, @RequestParam(value="b") String b) {
 		double sum = 0;
 		try{
@@ -31,7 +31,7 @@ public class StandardCalculatorController {
 		return sum;
     }
 	
-	@RequestMapping("/sub")
+	@RequestMapping("/standard/sub")
     public double sub(@RequestParam(value="a") String a, @RequestParam(value="b") String b) {
 		double diff = 0;
 		try{
@@ -45,7 +45,7 @@ public class StandardCalculatorController {
 		return diff;
     }
 	
-	@RequestMapping("/mul")
+	@RequestMapping("/standard/mul")
     public double mul(@RequestParam(value="a") String a, @RequestParam(value="b") String b) {
 		double prod = 0;
 		try{
@@ -59,7 +59,7 @@ public class StandardCalculatorController {
 		return prod;
     }
 	
-	@RequestMapping("/div")
+	@RequestMapping("/standard/div")
     public double div(@RequestParam(value="a") String a, @RequestParam(value="b") String b) {
 		double division = 0;
 		boolean invalidDenominator = false;
