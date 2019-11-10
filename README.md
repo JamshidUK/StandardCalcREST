@@ -16,7 +16,7 @@ There are two controllers defined for standard and scientific operations.
 	4. Add - Can be used to divide two decimal numbers.
 	   URL - http://localhost:8080/standard/div?a=-5&b=10
 
-Some basic validations to check if the inputs are valid numbers or not is performed.
+   Some basic validations to check if the inputs are valid numbers or not is performed.
 	   
 - Scientific Calculator: Has following operators
 	1. Square - Can be used to get the square of a number.
@@ -28,7 +28,7 @@ Some basic validations to check if the inputs are valid numbers or not is perfor
 	4. Prime number - Can be used to check if a number is prime or not.
 	   URL - http://localhost:8080/scientific/prime?a=10
 
-Some basic validations to check if the input is a valid number or not is performed.
+   Some basic validations to check if the input is a valid number or not is performed.
 
 Deploy:
 Clone this github project and run "mvn spring-boot:run" from the terminal to build the project and deploy on a local server. Can also be build as jar.
